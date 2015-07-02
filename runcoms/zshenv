@@ -9,3 +9,11 @@
 if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/
+
+export ANDROID_HOME=/Users/mkaloer/Development/Android/sdk
+
+export ES_HOME=/Users/mkaloer/Development/Java/elasticsearch
+
+export GRADLE_HOME=/usr/local/opt/gradle/libexec

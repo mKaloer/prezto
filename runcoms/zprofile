@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR=‘emacsclient’
+export VISUAL='emacsclient'
 export PAGER='less'
 
 #
@@ -45,7 +45,14 @@ typeset -gU cdpath fpath mailpath path
 path=(
   /usr/local/{bin,sbin}
   $path
+  /Users/mkaloer/Development/Android/sdk/platform-tools
+  /opt/local/{bin,sbin}
 )
+
+export GHC_DOT_APP="/Applications/Development/Haskell/ghc-7.8.3.app"
+if [ -d "$GHC_DOT_APP" ]; then
+    export PATH="${HOME}/.cabal/bin:${GHC_DOT_APP}/Contents/bin:${PATH}"
+fi
 
 #
 # Less
