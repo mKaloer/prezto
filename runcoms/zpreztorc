@@ -37,7 +37,8 @@ zstyle ':prezto:load' pmodule \
   'osx' \
   'python' \
   'tmux' \
-  'history-substring-search'
+  'history-substring-search' \
+  'zsh-iterm-touchbar'
 
 #
 # Autosuggestions
